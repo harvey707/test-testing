@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Repair Registration</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<div class="container">
+    <div>
+        <h1>Motherboard Repair Registration</h1>
+    </div>
+   
+    <div class="dot">
+        <img src="./images/2.png">
+        <form action="/submit" method="post">
+            <label for="laptopModel">Board type or Model:</label>
+            <input type="text" id="laptopModel" name="laptopModel" required>
+            <label for="faultDescription">Fault Description:</label>
+            <textarea id="faultDescription" name="faultDescription" rows="4" required></textarea>
+            <label for="faultDuration">Duration of Fault (in days):</label>
+            <input type="number" id="faultDuration" name="faultDuration" placeholder="how long now is faulty" required>
+            <label for="Or">specify</label>
+            <input type="text" id="or" name="title" placeholder="user or Engineer">
+            <label for="collectionDate">Collection Date:</label>
+            <input type="date" id="collectionDate" name="collectionDate" required>
+            <button class="send" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
